@@ -4,7 +4,7 @@ public class testeGerente {
 	public static void main(String[] args) {
 		Gerente gerente = new Gerente();
 		
-		gerente.setNome("gerente1");
+		gerente.setNome("gerente1"); // setNome herdado da classe Funcionario
 		gerente.setCpf("123456798");
 		gerente.setSalario(5000.0);
 		gerente.setSenha(1234);
