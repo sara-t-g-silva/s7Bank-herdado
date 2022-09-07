@@ -18,6 +18,8 @@ public class testeGerente {
 		
 		System.out.println(atenticou);
 		
+		System.out.println(gerente.getBonificacao());
+		
 
 	}
 

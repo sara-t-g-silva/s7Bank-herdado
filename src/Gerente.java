@@ -12,4 +12,8 @@ public class Gerente extends Funcionario { //Class Gerente herda tudo de Funcion
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
+	
+	public double getBonificacao() {
+		return super.getBonificacao()+ super.getSalario(); //chamada de metódos da super class;
+	}
 }
