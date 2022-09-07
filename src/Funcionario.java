@@ -1,13 +1,11 @@
-
-public class Funcionario {
+// não pode ser instanciada como um objeto por ser uma class abstract;
+public abstract class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
 	
-	
-	public double getBonificacao() {
-		return salario * 0.1;
-	}
+	// força as class filhas implementarem o método;
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;

@@ -14,6 +14,6 @@ public class Gerente extends Funcionario { //Class Gerente herda tudo de Funcion
 	}
 	
 	public double getBonificacao() {
-		return super.getBonificacao()+ super.getSalario(); //chamada de metódos da super class;
+		return getSalario(); //chamada de metódos da super class, não se pode mais usar o getBonificação padrão pois é um método abstract;
 	}
 }
