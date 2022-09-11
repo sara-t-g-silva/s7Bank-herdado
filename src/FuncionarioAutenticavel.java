@@ -1,10 +1,12 @@
 
-public class FuncionarioAutenticavel extends Funcionario {
+public abstract interface Autenticavel {
 
-	@Override
-	public double getBonificacao() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+	
+	
+	public void setSenha(int senha);
+	public boolean autentica(int senha);
+		
 }
+
+
+

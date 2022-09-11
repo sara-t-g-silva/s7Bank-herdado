@@ -10,6 +10,8 @@ public class TesteSistema {
 		
 		si.autentica(gerenteTest);
 		
+		
+		
 
 	}
 
