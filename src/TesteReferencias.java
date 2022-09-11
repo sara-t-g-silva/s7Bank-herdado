@@ -5,7 +5,7 @@ public class TesteReferencias {
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		
-		Funcionario ed = new EditorVideo();
+		Funcionario ed = new EditorVideo(); // uso do polimorfismo
 		ed.setSalario(2000.0);
 		
 		Funcionario d = new Designer();

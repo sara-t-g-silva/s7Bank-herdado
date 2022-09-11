@@ -1,8 +1,6 @@
 
 public class ControleBonificacao{
 	
-	
-	
 	private double soma;
 	
 	public double getSoma() {
@@ -11,7 +9,7 @@ public class ControleBonificacao{
 	
 	public void registra(Funcionario f) {
 		double boni = f.getBonificacao();
-		this.soma = this.soma + boni;
+		this.soma += boni;
 	}
 	
 }
