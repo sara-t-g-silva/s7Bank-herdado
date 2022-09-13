@@ -14,11 +14,13 @@ public class testeGerente {
 		System.out.println(gerente.getSalario());
 		System.out.println(gerente.getBonificacao());
 		
-		boolean atenticou = gerente.atentica(1234);
+		boolean atenticou = gerente.autentica(1234);
 		
 		System.out.println(atenticou);
 		
 		System.out.println(gerente.getBonificacao());
+		
+		System.out.println();
 		
 
 	}

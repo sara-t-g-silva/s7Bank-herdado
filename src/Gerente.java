@@ -1,10 +1,17 @@
 
 public class Gerente extends Funcionario implements Autenticavel{ //Class Gerente herda tudo de Funcionario. e implementa a interface autenticavel
-	private int senha; // iniciada com construtor padrão = 0; Podendo ser alterada com o método setSenha;
+	//private int senha; // iniciada com construtor padrão = 0; Podendo ser alterada com o método setSenha;
 	
+	public AutenticacaoUtil autenticador;
+	
+	public Gerente() {
+		
+		this.autenticador = new AutenticacaoUtil();
+		
+	}
 	
 	public void setSenha(int senha) {
-		this.senha = senha;
+		this.autenticador.setSenha(senha); // reaproveitamento de código de AutenticacaoUtil;
 	}
 	
 	public double getBonificacao() {
@@ -12,10 +19,8 @@ public class Gerente extends Funcionario implements Autenticavel{ //Class Gerent
 	}
 	@Override
 	public boolean autentica(int senha) {
-		if(this.senha == senha) {
-			return true;			
-		}else {
-			return false;
-		}
-	
+		
+		return this.autenticador.autentica(senha); // chama o construtor e o método dentro do construtor;
+	}
+		
 }
